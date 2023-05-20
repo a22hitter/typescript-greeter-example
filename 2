@@ -1,0 +1,16 @@
+// Название файла: hello.ts
+
+class Greeter {
+  private greeting: string;
+
+  constructor(message: string) {
+    this.greeting = message;
+  }
+
+  public greet(): void {
+    console.log(`Hello, ${this.greeting}!`);
+  }
+}
+
+const greeter = new Greeter("World");
+greeter.greet();
